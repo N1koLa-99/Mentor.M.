@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <style>
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+.heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #F4DDDD;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 120px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.company-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Britannic', sans-serif;/*Britannic --> sans-serif*/
+}
+
+.menu {
+    background-color: #BBB;
+    padding: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;/*Премахва подчертаването на линкове*/
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.body-content {
+    max-width: 900px;
+    padding: 20px;
+    display: block;
+}
+
+.main-photo {
+    float: left;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    line-height: 1.0;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0 40px 0;
+    font-size: 52px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #BBB;
+    position: fixed;
+    bottom: 0;
+    width: 70%;
+    left: 15%;
+    right: 15%;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+@media (max-width: 768px) { /*<768px*/
+    .main-photo {
+        float: none;
+        width: 90%;
+        margin-right: 0;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div class="heading-container">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/ZDF_logo%21_Logo_2021.svg/1200px-ZDF_logo%21_Logo_2021.svg.png" />
+            <span class="company-title">COMPANY TITLE GOES HERE</span>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="body-container">
+            <div class="body-content">
+                <h1 title="test">Lorem Ipsum</h1>
+                <img class="main-photo" src="https://images.pexels.com/photos/1461974/pexels-photo-1461974.jpeg?cs=srgb&dl=pexels-nextvoyage-1461974.jpg&fm=jpg" />
+                <span class="main-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam magna imperdiet, mattis ex sed, tincidunt urna. Nullam non orci id velit tempus pretium. Fusce tempus ante eget neque auctor gravida. Sed odio purus, pellentesque vitae ante eu, mollis viverra augue. Pellentesque faucibus turpis ac tortor viverra pharetra. Suspendisse suscipit dolor vel arcu molestie, eget mollis nisi convallis. Quisque feugiat et erat quis mattis. Duis non neque ut turpis pharetra ornare. Morbi vitae consectetur lectus. Integer in ligula diam. Morbi libero libero, lobortis vitae leo sed, interdum tempor turpis. Nunc sed eleifend sapien, non tincidunt nunc.
+                    Vivamus ut facilisis nulla, et accumsan ligula. Nulla vel pretium nisl, nec elementum velit. Pellentesque sollicitudin sed sapien nec aliquam. Proin quis ex a est pretium tristique eu quis massa. Sed venenatis elementum dolor a posuere. Sed ut ipsum tincidunt dolor finibus cursus vel aliquet nulla. Ut convallis felis eget urna aliquam porta. Maecenas ante tellus, ornare eget est sed, ultrices faucibus ex. Nunc condimentum, nisi quis luctus viverra, diam dolor aliquet massa, eu vulputate metus sapien congue erat. Nulla blandit posuere lectus sit amet molestie.
+                    Nulla quis hendrerit ex, vel accumsan lectus. Cras fermentum ante velit, non tincidunt tellus gravida at. Vestibulum in cursus risus. Donec in eros ante. Integer lacinia dignissim nibh sed malesuada. Aenean elementum egestas gravida. Sed consequat convallis lorem, eget hendrerit turpis ornare sit amet. Nulla posuere justo a libero rhoncus vestibulum. Suspendisse ullamcorper turpis egestas tempor consectetur. Phasellus vel dolor eget lacus egestas placerat at nec mi. Quisque justo ex, cursus in sem id, pellentesque fermentum metus.
+                    Phasellus volutpat enim et massa interdum mollis. Phasellus nec feugiat eros. Aenean consectetur dapibus faucibus. Proin justo risus, pulvinar vitae dui ac, rutrum ullamcorper ante. Nullam vitae luctus elit. Sed ligula nisl, eleifend id porta non, sagittis in elit. Sed vitae ipsum sed purus tincidunt tempor. Fusce id nisl nec sapien dictum rutrum ac in tortor. Nulla posuere, magna vitae interdum dapibus, enim ligula efficitur felis, quis vestibulum sapien velit vitae mauris. Proin commodo, ipsum id efficitur rutrum, orci nisl rhoncus risus, in interdum urna elit quis neque. Quisque lobortis risus sit amet libero molestie viverra. Vestibulum malesuada purus ac diam malesuada, sit amet eleifend nisl iaculis. Maecenas viverra leo nec orci laoreet, eget posuere velit maximus. Maecenas hendrerit augue ut pulvinar iaculis. In augue lorem, imperdiet a tellus sodales, tempus aliquet lacus. Integer dictum, nibh vitae euismod tempor, magna velit tristique mauris, pharetra facilisis augue purus vel nibh.
+                    Vestibulum vel aliquet massa. Nunc ac sem suscipit, aliquet arcu a, semper tellus. Morbi finibus consequat odio, quis posuere orci tincidunt id. Curabitur accumsan sagittis velit, quis commodo nibh aliquet eget. Aliquam molestie lacinia sapien a accumsan. Nunc magna diam, elementum in blandit et, pharetra ac felis. Integer imperdiet orci ac lacus maximus, id ullamcorper odio sodales. In vehicula a augue eu luctus. Pellentesque iaculis quam dolor. Aliquam mauris ex, commodo in nisi eget, vestibulum egestas nunc. Nam placerat vehicula finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris scelerisque et lectus eget dictum. Nulla nec tempor sapien, id ultrices enim. Curabitur at turpis sem. Donec egestas iaculis tempor.
+                </span>
+            </div>
+        </div>
+        <div class="footer-container">Created By ME</div>
+    </body>
+</html>
